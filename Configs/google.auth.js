@@ -11,7 +11,7 @@ passport.use(new GoogleStrategy({
 
     clientID: process.env.googleclientid,
     clientSecret: process.env.googleclientsecret,
-    callbackURL: "http://localhost:7500/user/auth/google/callback"
+    callbackURL: "https://frightened-tuna-cummerbund.cyclic.app/user/auth/google/callback"
 
   },
 
