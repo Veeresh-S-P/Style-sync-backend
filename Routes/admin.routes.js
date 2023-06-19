@@ -34,7 +34,7 @@ adminRouter.patch("/updateRole/:userID", async (req, res) => {
         if(user.email=='admin@stylesync.com'){
             return res.send({msg:"You are not able to change the role of super admin"})
         }
-        user.userType = user.Type=='Admin' ? "customer" : "Admin"
+        user.userType = user.userType=='Admin' ? "customer" : "Admin"
         await user.save()
         res.send({msg:"User Role is Successfully Changed"})
     } catch (error) {
