@@ -29,7 +29,7 @@ const googleAuthentication = async (req, res) => {
 
     // const frontendURL = `https://qr-insight-craft.netlify.app/`
 
-    const frontendURL = "http://127.0.0.1:5500/Frontend/index.html"
+    const frontendURL = "https://style-sync-app.netlify.app/"
 
     res.send(`
                 <a href="${frontendURL}?userID=${user._id}" id="myid" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #222222; margin: 0; padding: 0; overflow: scroll;">
